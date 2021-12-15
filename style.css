@@ -1,0 +1,122 @@
+* {
+  transition: 0.3s;
+}
+
+body {
+  background-color: #0d192b;
+  margin: 0;
+}
+
+h1, p, span {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.text-white {
+  color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 16em;
+  margin: 0 2rem;
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: #14253d;
+  box-shadow: 0 1em 10px 1em rgba(0, 0, 0, 0.08), 0 1em 10px 3em rgba(0, 0, 0, 0.03);
+}
+.card .img {
+  position: relative;
+}
+.card .img .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  display: grid;
+  place-items: center;
+}
+.card .img .overlay:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.card .img .overlay img {
+  width: 2.5em;
+}
+.card .img .main-img {
+  display: block;
+  border-radius: 0.5em;
+  max-width: 100%;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+.card-text .title {
+  color: white;
+}
+.card-text .description {
+  margin-top: 0;
+  color: #8bacda;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.card-info {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-info .price {
+  display: flex;
+  align-items: center;
+  color: #00fff7;
+  font-size: 0.9rem;
+  vertical-align: center;
+}
+.card-info .time {
+  display: flex;
+  align-items: center;
+  color: #8bacda;
+  font-size: 0.9rem;
+}
+.card-info .price img, .card-info .time img {
+  margin-right: 5px;
+}
+
+.card-footer {
+  border-top: 1px solid #2f415b;
+  margin-top: 1em;
+  padding: 1em 0 0.5em;
+  display: flex;
+  align-items: center;
+}
+.card-footer .avatar {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.card-footer .text {
+  font-size: 0.8rem;
+  color: #8bacda;
+  letter-spacing: 0.05em;
+}
+.card-footer .text .text-white {
+  font-size: 0.8rem;
+}
+
+.hover-cyan:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
